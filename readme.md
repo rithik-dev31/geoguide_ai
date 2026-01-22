@@ -65,7 +65,7 @@ geoguide/
 
 ### Step 1: Clone & Navigate
 ```bash
-git clone <repository-url>
+git clone https://github.com/rithik-dev31/caremate.git
 cd geoguide
 ```
 
