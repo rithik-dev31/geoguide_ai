@@ -1,0 +1,62 @@
+geoguide/
+│
+├── manage.py
+│   Django command-line utility for administrative tasks.
+│
+├── db.sqlite3
+│   SQLite database used for local development and testing.
+│
+├── licence
+│   Project license file (GPLv3).
+│
+├── geoguide/
+│   ├── __init__.py
+│   ├── asgi.py
+│   │   ASGI entry point for asynchronous deployment.
+│   │
+│   ├── settings.py
+│   │   Global Django configuration including database, apps, templates,
+│   │   API keys, and middleware.
+│   │
+│   ├── urls.py
+│   │   Root URL configuration linking app routes and Django admin.
+│   │
+│   └── wsgi.py
+│       WSGI entry point for traditional server deployment.
+│
+└── app/
+    ├── __init__.py
+    ├── admin.py
+    │   Admin panel configuration and model registration.
+    │
+    ├── apps.py
+    │   Application configuration file.
+    │
+    ├── models.py
+    │   Database models (currently placeholder).
+    │
+    ├── tests.py
+    │   Test cases placeholder.
+    │
+    ├── urls.py
+    │   App-level routes including:
+    │   - home
+    │   - chat API
+    │   - enhanced search
+    │   - place details
+    │   - location greeting
+    │   - test and clear chat endpoints
+    │
+    ├── views.py
+    │   Core backend logic:
+    │   - Gemini AI client initialization
+    │   - Chat and search APIs
+    │   - Place recommendation logic
+    │   - Intent analysis and helper utilities
+    │
+    └── templates/
+        └── home.html
+            Main frontend UI:
+            - Google Maps integration
+            - Interactive map and place search
+            - Client-side JavaScript and styling
